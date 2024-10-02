@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Projetos Ribas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #7f00ff);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .projetos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .projeto {
+            flex: 0 0 45%;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #fff;
+        }
+
+        .projeto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #ff7f00;
+            outline: none;
+        }
+
+        form button {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projetos Ribas</h1>
+        <p>Desenvolvedor de Software</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor de software apaixonado por criar soluções inovadoras e eficientes.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <article class="projeto">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: HTML, CSS, JavaScript</p>
+                <a href="https://github.com/seu_usuario/projeto1" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: HTML, CSS, JavaScript</p>
+                <a href="https://github.com/seu_usuario/projeto2" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 3</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: React, Node.js</p>
+                <a href="https://github.com/seu_usuario/projeto3" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 4</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: Python, Flask</p>
+                <a href="https://github.com/seu_usuario/projeto4" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 5</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: Java, Spring Boot</p>
+                <a href="https://github.com/seu_usuario/projeto5" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 6</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: PHP, Laravel</p>
+                <a href="https://github.com/seu_usuario/projeto6" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 7</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: C#, ASP.NET</p>
+                <a href="https://github.com/seu_usuario/projeto7" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 8</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: Vue.js, Firebase</p>
+                <a href="https://github.com/seu_usuario/projeto8" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 9</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: Go, Gin</p>
+                <a href="https://github.com/seu_usuario/projeto9" target="_blank">Repositório no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto 10</h3>
+                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
+                <p>Tecnologias: Ruby on Rails</p>
+                <a href="https://github.com/seu_usuario/projeto10" target="_blank">Repositório no GitHub</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="message" placeholder="Sua
