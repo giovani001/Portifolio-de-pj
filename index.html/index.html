@@ -25,7 +25,9 @@
         }
 
         header {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza horizontalmente */
             padding: 40px 20px;
             color: #fff;
             background: rgba(0, 0, 0, 0.5);
@@ -43,9 +45,7 @@
             height: 100px;
             border-radius: 50%;
             overflow: hidden;
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            margin-top: 10px; /* Adiciona espaço entre o título e a imagem */
         }
 
         .circle-image img {
@@ -220,15 +220,4 @@
             <article class="projeto">
                 <img src="https://via.placeholder.com/400" alt="Projeto 8">
                 <h3>Projeto 8</h3>
-                <p>Descrição breve do projeto, seu objetivo e a problemática que ele resolve.</p>
-                <p>Tecnologias: Vue.js, Firebase</p>
-                <a href="https://github.com/seu_usuario/projeto8" target="_blank">Repositório no GitHub</a>
-            </article>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Projetos Ribas</p>
-    </footer>
-</body>
-</html>
+                <p>Descrição breve do
